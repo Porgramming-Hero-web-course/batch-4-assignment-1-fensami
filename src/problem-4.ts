@@ -14,9 +14,12 @@
         height: number;
     }
 
+    // Union Type
     type Shape = Circle | Rectangle;
 
+    // Arrow Funciton
     const calculateShapeArea = (shape: Shape) => {
+        // Condition
         if ("circle" === shape.shape) {
             const areaOfCircle = Math.PI * shape.radius * shape.radius
             return areaOfCircle;
@@ -26,17 +29,20 @@
         }
     }
 
+    // Circle Shape
     const circle: Shape = {
         shape: "circle",
         radius: 5
     }
+    // Circle Shape Result
     console.log(calculateShapeArea(circle));
 
+    // Rectangle shape
     const rectangle: Shape = {
         shape: "rectangle",
         width: 4,
         height: 6
     }
-
+    // Rectangle shape Result
     console.log((calculateShapeArea(rectangle)));
 }

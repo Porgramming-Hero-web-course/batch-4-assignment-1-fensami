@@ -3,27 +3,31 @@
 
 
     
+    // interface
     interface Profile {
         name: string;
         age: number;
         email: string;
     }
 
+    // MyProfile Value
     const myProfile : Profile = {
         name: "Alice",
         age: 25,
         email: "alice@example.com"
     }
 
+    // Arrow function
     const updateProfile=(profile:Profile, updatedMyProfile: Partial<Profile>): Profile => {
         return {...profile, ...updatedMyProfile}
     }
 
-    // My Profile
-    console.log(myProfile);
+    // My Profile Result
+    // console.log(myProfile);
     
     // updateProfile
     const updatePuser = updateProfile(myProfile,{age:26})
+    // UpdateProfile Result
     console.log(updatePuser);
     
     
