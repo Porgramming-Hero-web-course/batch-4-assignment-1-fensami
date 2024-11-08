@@ -26,6 +26,7 @@ If the Promise is rejected , you can attach an error handle using the catch meth
 
 <!-- Promies Example -->
 
+```
 const myPromise = new Promise((resolve, reject) => {
     * Do some asyncehoronous operation
     * if the operation is successfull, call resolve with the result
@@ -37,6 +38,7 @@ myPromise.then((result)=> {
 }).catch((error)=> {
     * handle Error
 })
+```
 
 
 
