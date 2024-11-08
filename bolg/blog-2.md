@@ -43,6 +43,16 @@ myPromise.then((result)=> {
 # Callbacks
 A callback is a function that is passed as an argument to another function . The callback function is called (or executed) inside the other function . Callbacks are used to make sure that a function is not going to run before a task is completed but will run right after the task has completed . It haps us develop asynchronous Javascript code and keeps us safe from problems and errors.
 
+```
+const add = (a:number,b:number, callback:(result: number) => void)=> {
+    const result = a + b;
+    callback(result);
+}
+
+add(10,20,(result)=> {
+    console.log(result)
+})
+```
 
 
 
