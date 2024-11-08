@@ -15,14 +15,14 @@
         email: "alice@example.com"
     }
 
-    const updateProfile=(profile:Profile, updatedP: Partial<Profile>): Profile => {
-        return {...profile, ...updatedP}
+    const updateProfile=(profile:Profile, updatedMyProfile: Partial<Profile>): Profile => {
+        return {...profile, ...updatedMyProfile}
     }
 
-
-    // updateProfile
+    // My Profile
     console.log(myProfile);
-
+    
+    // updateProfile
     const updatePuser = updateProfile(myProfile,{age:26})
     console.log(updatePuser);
     
