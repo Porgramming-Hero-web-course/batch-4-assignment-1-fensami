@@ -5,7 +5,8 @@
 
 <!-- Async Await Example -->
 
-const functionName =  async (): Promise<ReturnType> => {
+
+``` const functionName =  async (): Promise<ReturnType> => {
     try{
         const result = await promise;
 
@@ -13,7 +14,8 @@ const functionName =  async (): Promise<ReturnType> => {
     }catch(error){
         throw error;
     }
-};
+}; 
+```
 
 
 # Promises
